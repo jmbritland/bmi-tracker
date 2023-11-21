@@ -1,0 +1,14 @@
+<configuration>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/bmitracker.log</file>
+        <encoder>
+		    <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %replace(%msg%n%rEx{5}){'\n', '\n    '}%n</pattern>
+		</encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
