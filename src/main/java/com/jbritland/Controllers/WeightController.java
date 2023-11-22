@@ -2,6 +2,8 @@ package com.jbritland.Controllers;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +19,7 @@ import com.jbritland.Services.WeightService;
 import jakarta.validation.Valid;
 
 @RestController
+@CrossOrigin(origins = "https://codesandbox.io")
 public class WeightController {
 
 	private final WeightService wService;
